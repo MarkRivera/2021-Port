@@ -350,53 +350,88 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+        year: "Jan 2021 - Present",
+        position: "Full Stack Web Developer",
+        company: "Seven Star",
+        details: [
+          `Collaborated with a small team to construct an API, client side app and informational landing page, securing multiple rounds of funding from investors.`,
+          `Wore multiple hats to supplement company needs and health during development, resulting in a solid beta application that was presented to the City of Chicago and Port Authority.`,
+          `Authored an average about 12 unit and intergration tests per component to ensure app durability and redundancy. Resulting in a fully functional app even after heavy refactoring.`,
+        ],
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+        year: "Mar 2021 - Jul 2021",
+        position: "Sheet Developer",
+        company: "Roll20",
+        details: [
+          `Developed and updated over 20+ virtual table top gaming sheets, which are used by over 8,000,000 users`,
+          `Resolved 8 to 10 user generated tickets daily, which resulted in consistently updated sheets and improved user satisfaction`,
+          `Designed wireframes for multiple sheets, improving team coordination and development time on long or complex projects`,
+        ],
       },
       {
         id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
+        year: "Aug 2021 - Present",
+        position: "Full Stack Web Developer",
+        company: "Human Rights First",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "A new development, current researching and discussing how to solve the needs of food insecure communities without introducing harmful biases into potential algorithms",
+      },
+    ],
+
+    projects: [
+      {
+        id: 1,
+        year: "2021",
+        name: "Protected",
+        github: "Protected",
+        live: "https://staging.protected-app.com/",
+        company: "",
+        details: [
+          `Reduced known bugs by 47% by engineering robust unit and integration tests. Which also improved app stability from version to version`,
+          `Engineered custom user authentication flow with input sanitization to protect sensitive user information`,
+        ],
+      },
+      {
+        id: 2,
+        year: "2021",
+        name: "RemindMe",
+        github: "https://github.com/MarkRivera/remindme",
+        live: "https://remindmedjango.herokuapp.com",
+        company: "",
+        details: [
+          `Implemented a background process with scheduler. Allowing the app to send text messages to users at a scheduled time of day`,
+          `Incorporated Redux state management to handle state changes within the application`,
+        ],
+      },
+      {
+        id: 3,
+        year: "2021",
+        name: "Police Use of Force Tracker",
+        github: "https://github.com/MarkRivera/human-rights-first-fe-a",
+        live: "https://a.humanrightsfirst.dev",
+        company: "",
+        details: [
+          `Reduced unnecessary re-renders by implementing proper hook dependencies, which led to a 96% increase in application performance`,
+          `Re-engineered three auto-updating graphs that displayed yearly trends with the goal of improving readability and visualization of the data to users`,
+        ],
       },
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
-        graduation: "Master of Science",
-        university: "Abc University",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+        year: "Jan 2020 - Jan 2021",
+        graduation: "Full Stack Web Development, Computer Science",
+        university: "Lambda School",
+        details: "",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
-      },
-      {
-        id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+        year: "Jan 2019 - Sep 2022",
+        graduation: "A.S. Engineering Science, Computer Engineering",
+        university: "CUNY Bronx CC",
+        details: "",
       },
     ],
   },

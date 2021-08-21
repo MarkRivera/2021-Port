@@ -9,10 +9,12 @@ import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
 import Testimonial from "../components/Testimonial";
+import LineIcon from "react-lineicons";
 
 function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
+  const [skills, setSkills] = useState([]);
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
 
@@ -48,6 +50,9 @@ function About() {
     axios.get("/api/information").then(response => {
       setInformation(response.data);
     });
+    axios.get("/api/skills").then(response => {
+      setSkills(response.data);
+    });
     axios.get("/api/services").then(response => {
       setServices(response.data);
     });
@@ -59,8 +64,8 @@ function About() {
   return (
     <Layout>
       <Helmet>
-        <title>About - Mark Rivera's Portfolio</title>
-        <meta name="description" content="Mark Rivera's Portfolio" />
+        <title>About - Mark Rivera</title>
+        <meta name="description" content="Mark Rivera's details and skills" />
       </Helmet>
       <div className="mi-about-area mi-section mi-padding-top">
         <div className="container">
@@ -141,6 +146,28 @@ function About() {
                   Download CV
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mi-skills-area mi-section mi-padding-top">
+        <div className="container">
+          <Sectiontitle title="My Skills" />
+          <div className="mi-skills">
+            <div className="row mt-30-reverse">
+              {skills.map(skill => (
+                <div className="skill-container">
+                  <h3>{skill.title}</h3>
+                  <div className="skill-icons">
+                    {skill.data.map(icon => (
+                      <div className="data-containers">
+                        <h4 className="skill-icon-title">{icon.title}</h4>
+                        <LineIcon name={icon.icon} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

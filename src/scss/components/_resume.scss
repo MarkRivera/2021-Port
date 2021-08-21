@@ -59,6 +59,26 @@
   }
 }
 
+.resume-title-container {
+  display: flex;
+
+  .mi-sectiontitle:first-child {
+    margin-right: 1rem;
+  }
+
+  @media #{$layout-mobile-xs} {
+    flex-direction: column;
+
+    .mi-sectiontitle:first-child {
+      margin-bottom: 20px;
+    }
+
+    .mi-button {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .mi-resume {
   &-wrapper {
     border-left: 3px solid $color-border;
@@ -116,19 +136,27 @@
     p {
       margin-bottom: 0;
     }
+
+    .resume-links-container {
+      display: flex;
+
+      & h6:first-child {
+        margin-right: 1rem;
+      }
+    }
   }
 
   @media #{$layout-notebook} {
     &-summary {
-      flex: 0 0 170px;
-      max-width: 170px;
+      flex: 0 0 200px;
+      max-width: 200px;
     }
   }
 
   @media #{$layout-tablet} {
     &-summary {
-      flex: 0 0 170px;
-      max-width: 170px;
+      flex: 0 0 200px;
+      max-width: 200px;
     }
   }
 
