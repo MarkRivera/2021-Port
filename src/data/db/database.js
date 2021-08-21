@@ -1,4 +1,6 @@
 import Mock from "../mock";
+import AboutMark from "../images/Mark-Five.jpg";
+import MarkResume from "../files/Software Engineer Summary.pdf";
 
 const database = {
   information: {
@@ -21,9 +23,9 @@ const database = {
       github: "https://github.com/MarkRivera",
     },
     brandImage: "/images/brand-image.jpg",
-    aboutImage: "/images/about-image.jpg",
+    aboutImage: AboutMark,
     aboutImageLg: "/images/about-image-lg.jpg",
-    cvfile: "/files/empty.pdf",
+    cvfile: MarkResume,
   },
   services: [
     {
@@ -76,27 +78,23 @@ const database = {
   skills: [
     {
       title: "HTML5",
-      value: 95,
+      icon: "html5",
     },
     {
       title: "CSS3",
-      value: 90,
+      icon: "css3",
     },
     {
-      title: "Javascript",
-      value: 70,
-    },
-    {
-      title: "jQuery",
-      value: 85,
+      title: "JavaScript",
+      icon: "javascript",
     },
     {
       title: "ReactJS",
-      value: 80,
+      icon: "react",
     },
     {
-      title: "Photoshop",
-      value: 65,
+      title: "TypeScript",
+      icon: "code",
     },
   ],
   portfolios: [

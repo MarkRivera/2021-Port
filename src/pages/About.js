@@ -75,7 +75,7 @@ function About() {
                   {src => (
                     <img
                       src={src}
-                      alt="aboutimage"
+                      alt="Mark looking into camera"
                       onClick={() => handleToggler(!toggler)}
                     />
                   )}
@@ -85,19 +85,15 @@ function About() {
                 </span>
                 <FsLightbox
                   toggler={toggler}
-                  sources={[information.aboutImageLg]}
+                  sources={[information.aboutImage]}
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="mi-about-content">
-                <h3>
-                  I am <span className="color-theme">{information.name}</span>
-                </h3>
                 <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
+                  A Full Stack Developer originally from New York City, nice to
+                  meet you!
                 </p>
                 <ul>
                   {!information.name ? null : (

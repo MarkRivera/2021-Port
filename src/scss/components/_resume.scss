@@ -2,13 +2,24 @@
  * Resume 
  */
 
+.mi-skills {
+  & .row {
+    display: flex;
+    flex-flow: row;
+
+    & {
+      display: flex;
+
+      & > span {
+        width: 150px;
+      }
+    }
+  }
+}
+
 .mi-resume {
   &-wrapper {
     border-left: 3px solid $color-border;
-  }
-
-  & {
-    display: flex;
   }
 
   &-summary {
