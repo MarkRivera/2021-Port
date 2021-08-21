@@ -1,6 +1,7 @@
 import Mock from "../mock";
 import AboutMark from "../images/Mark-Five.jpg";
 import MarkResume from "../files/Software Engineer Summary.pdf";
+import MarkHeader from "../images/Mark-Three.jpg";
 
 const database = {
   information: {
@@ -22,7 +23,7 @@ const database = {
       dribbble: "",
       github: "https://github.com/MarkRivera",
     },
-    brandImage: "/images/brand-image.jpg",
+    brandImage: MarkHeader,
     aboutImage: AboutMark,
     aboutImageLg: "/images/about-image-lg.jpg",
     cvfile: MarkResume,
@@ -77,24 +78,89 @@ const database = {
   ],
   skills: [
     {
-      title: "HTML5",
-      icon: "html5",
+      title: "Front End",
+      data: [
+        {
+          title: "HTML5",
+          icon: "html5",
+        },
+        {
+          title: "CSS3",
+          icon: "css3",
+        },
+        {
+          title: "JavaScript",
+          icon: "javascript",
+        },
+        {
+          title: "ReactJS",
+          icon: "react",
+        },
+        {
+          title: "TypeScript",
+          icon: "code",
+        },
+      ],
     },
+
     {
-      title: "CSS3",
-      icon: "css3",
+      title: "Back End",
+      data: [
+        {
+          title: "NodeJS",
+          icon: "nodejs",
+        },
+        {
+          title: "Express",
+          icon: "archive",
+        },
+        {
+          title: "Python",
+          icon: "python",
+        },
+        {
+          title: "Django",
+          icon: "invention",
+        },
+        {
+          title: "Mongo",
+          icon: "files",
+        },
+        {
+          title: "PostgreSQL",
+          icon: "database",
+        },
+      ],
     },
+
     {
-      title: "JavaScript",
-      icon: "javascript",
+      title: "Testing",
+      data: [
+        {
+          title: "Cypress",
+          icon: "laptop-phone",
+        },
+
+        {
+          title: "RTL",
+          icon: "rocket",
+        },
+      ],
     },
+
     {
-      title: "ReactJS",
-      icon: "react",
-    },
-    {
-      title: "TypeScript",
-      icon: "code",
+      title: "Operations",
+      data: [
+        {
+          title: "Github",
+          icon: "github",
+        },
+
+        {
+          title: "Wireframing",
+          icon: "frame-expand",
+        },
+      ],
     },
   ],
   portfolios: [

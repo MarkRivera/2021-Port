@@ -5,13 +5,55 @@
 .mi-skills {
   & .row {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
 
     & {
       display: flex;
 
       & > span {
         width: 150px;
+      }
+    }
+
+    & > .skill-container {
+      margin-top: 2rem;
+      & .skill-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        > h4 {
+          margin: 0.5rem;
+        }
+      }
+    }
+
+    .data-containers {
+      display: flex;
+      align-items: baseline;
+
+      h4 {
+        margin-right: 1rem;
+      }
+    }
+
+    @media #{$layout-mobile-xs} {
+      & > .skill-container {
+        & .skill-icons {
+          display: grid;
+          grid-template-columns: auto;
+
+          > h4 {
+            margin: 0.5rem;
+          }
+        }
+      }
+
+      .data-containers {
+        padding: 0 1rem;
+
+        h4 {
+          margin-right: 1rem;
+        }
       }
     }
   }

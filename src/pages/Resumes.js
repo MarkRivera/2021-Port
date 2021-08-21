@@ -34,10 +34,17 @@ function Resumes() {
           <div className="mi-skills">
             <div className="row mt-30-reverse">
               {skills.map(skill => (
-                <span key={skill.title}>
-                  <LineIcon name={skill.icon} />
-                  <p>{skill.title}</p>
-                </span>
+                <div className="skill-container">
+                  <h3>{skill.title}</h3>
+                  <div className="skill-icons">
+                    {skill.data.map(icon => (
+                      <div className="data-containers">
+                        <h4 className="skill-icon-title">{icon.title}</h4>
+                        <LineIcon name={icon.icon} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
