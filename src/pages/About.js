@@ -145,6 +145,7 @@ function About() {
                 <a
                   href={information.cvfile}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="mi-button"
                 >
                   Download CV

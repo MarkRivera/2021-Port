@@ -33,7 +33,12 @@ function Resumes() {
         <div className="container">
           <div className="resume-title-container">
             <Sectiontitle title="Resume" />
-            <a href={information.cvfile} target="_blank" className="mi-button">
+            <a
+              href={information.cvfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mi-button"
+            >
               Download CV
             </a>
           </div>
