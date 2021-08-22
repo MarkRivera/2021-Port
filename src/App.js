@@ -47,6 +47,7 @@ function App() {
         <Route path="/resume" component={Resumes} />
         <Route path="/portfolios" component={Portfolios} />
         <Route path="/contact" component={Contact} />
+        <Route path="/*" component={Home} />
         <Route path="*" component={Notfound} />
       </Switch>
     </BrowserRouter>
