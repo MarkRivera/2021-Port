@@ -18,7 +18,7 @@ function Contact() {
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
-  const submitHandler = (event) => {
+  const submitHandler = event => {
     event.preventDefault();
     if (!formdata.name) {
       setError(true);
@@ -37,13 +37,13 @@ function Contact() {
       setMessage("You message has been sent!!!");
     }
   };
-  const handleChange = (event) => {
+  const handleChange = event => {
     setFormdata({
       ...formdata,
       [event.currentTarget.name]: event.currentTarget.value,
     });
   };
-  const numberFormatter = (number) => {
+  const numberFormatter = number => {
     const phnNumber = number;
     return phnNumber;
   };
@@ -59,7 +59,7 @@ function Contact() {
   };
 
   useEffect(() => {
-    axios.get("/api/contactinfo").then((response) => {
+    axios.get("/api/contactinfo").then(response => {
       setPhoneNumbers(response.data.phoneNumbers);
       setEmailAddress(response.data.emailAddress);
       setAddress(response.data.address);
@@ -152,7 +152,7 @@ function Contact() {
                     </span>
                     <div className="mi-contact-infoblock-content">
                       <h6>Phone</h6>
-                      {phoneNumbers.map((phoneNumber) => (
+                      {phoneNumbers.map(phoneNumber => (
                         <p key={phoneNumber}>
                           <a href={numberFormatter(phoneNumber)}>
                             {phoneNumber}
@@ -169,7 +169,7 @@ function Contact() {
                     </span>
                     <div className="mi-contact-infoblock-content">
                       <h6>Email</h6>
-                      {emailAddress.map((email) => (
+                      {emailAddress.map(email => (
                         <p key={email}>
                           <a href={`mailto:${email}`}>{email}</a>
                         </p>

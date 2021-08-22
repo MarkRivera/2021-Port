@@ -1,7 +1,45 @@
 import Mock from "../mock";
+
+// Mark Images
 import AboutMark from "../images/Mark-Five.jpg";
 import MarkResume from "../files/Software Engineer Summary.pdf";
 import MarkHeader from "../images/Mark-Three.jpg";
+
+// Project Images
+// -- Protected
+import ProtectedHome from "../projects/protected/home.png";
+import ProtectedLogin from "../projects/protected/login.png";
+import ProtectedMap from "../projects/protected/map.png";
+import ProtectedDetails from "../projects/protected/details.png";
+import ProtectedInteraction from "../projects/protected/interaction.png";
+import ProtectedQuestion from "../projects/protected/question.png";
+import ProtectedReview from "../projects/protected/review.png";
+
+// -- RemindMe
+import RemindMeHome from "../projects/remindme/home.png";
+import RemindMeRegister from "../projects/remindme/register.png";
+import RemindMeRemove from "../projects/remindme/remove.png";
+
+// -- BlueWitness
+import BlueWitnessHome from "../projects/bluewitness/map.png";
+import BlueWitnessGraph from "../projects/bluewitness/graphs.png";
+import BlueWitnessLine from "../projects/bluewitness/linegraph.png";
+import BlueWitnessPie from "../projects/bluewitness/piechart.png";
+import BlueWitnessReports from "../projects/bluewitness/reports.png";
+import BlueWitnessResults from "../projects/bluewitness/results.png";
+import BlueWitnessStats from "../projects/bluewitness/stats.png";
+
+// -- DevConnector
+import DevConnecterHome from "../projects/devconnector/home.png";
+import DevConnectorDev from "../projects/devconnector/dev.png";
+import DevConnectorLogin from "../projects/devconnector/login.png";
+import DevConnectorProfile from "../projects/devconnector/profile.png";
+import DevConnectorRegister from "../projects/devconnector/register.png";
+
+// -- WatchThis
+import WatchThisHome from "../projects/watchthis/home.png";
+import WatchThisLogin from "../projects/watchthis/login.png";
+import WatchThisRegister from "../projects/watchthis/register.png";
 
 const database = {
   information: {
@@ -52,27 +90,21 @@ const database = {
     {
       id: 1,
       content:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.",
+        "Working with Mark has been nothing but a great experience, professional, prompt and communicative. 10/10",
       author: {
-        name: "Burdette Turner",
-        designation: "Web Developer, Abc Company",
+        name: "Mike Merchant",
+        designation: "Actor - Client",
+        linkedin: "",
       },
     },
     {
       id: 2,
       content:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
+        "Mark is always willing to jump in on projects and help out where needed. He is an excellent person to work with and a great team player.",
       author: {
-        name: "Susan Yost",
-        designation: "Client",
-      },
-    },
-    {
-      id: 3,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-      author: {
-        name: "Irving Feeney",
-        designation: "Fiverr Client",
+        name: "Michael Rockinham",
+        designation: "SvnStar - Co-worker",
+        linkedin: "https://www.linkedin.com/in/michaelkrockingham/",
       },
     },
   ],
@@ -166,184 +198,71 @@ const database = {
   portfolios: [
     {
       id: 1,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: "https://dribbble.com",
+      title: "Protected",
+      subtitle:
+        "An app designed to protect both officers and citizens during their daily interactions",
+      imageUrl: ProtectedHome,
+      largeImageUrl: [
+        ProtectedLogin,
+        ProtectedMap,
+        ProtectedDetails,
+        ProtectedInteraction,
+        ProtectedQuestion,
+        ProtectedReview,
+      ],
+      url: "https://staging.protected-app.com/",
+      git: "https://github.com/SevenStar-Development",
     },
     {
       id: 2,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg",
-      ],
-      url: "https://facebook.com",
+      title: "RemindMe",
+      subtitle:
+        "An app built on top of python and Django, this will send you a reminder via text message when your license is about to expire",
+      imageUrl: RemindMeHome,
+      largeImageUrl: [RemindMeRegister, RemindMeRemove],
+      url: "https://remindmedjango.herokuapp.com/#/",
+      git: "https://github.com/MarkRivera/remindme",
     },
     {
       id: 3,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: "https://pinterest.com",
+      title: "Blue Witness",
+      subtitle: "Tracks police use of force across the United States",
+      imageUrl: BlueWitnessHome,
+      largeImageUrl: [
+        BlueWitnessGraph,
+        BlueWitnessLine,
+        BlueWitnessPie,
+        BlueWitnessReports,
+        BlueWitnessResults,
+        BlueWitnessStats,
+      ],
+      url: "https://a.humanrightsfirst.dev/",
+      git: "https://github.com/Lambda-School-Labs/human-rights-first-police-fe-a",
     },
     {
       id: 4,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: "#",
+      title: "DevConnector",
+      subtitle: "A social media site for developers",
+      imageUrl: DevConnecterHome,
+      largeImageUrl: [
+        DevConnectorDev,
+        DevConnectorLogin,
+        DevConnectorProfile,
+        DevConnectorRegister,
+      ],
+      url: "https://safe-brushlands-22158.herokuapp.com/",
+      git: "https://github.com/MarkRivera/NetBuilders",
     },
+
     {
       id: 5,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
-    },
-    {
-      id: 6,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
-    },
-    {
-      id: 7,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: "https://twitter.com",
-    },
-    {
-      id: 8,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
-    },
-    {
-      id: 9,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
-    },
-    {
-      id: 10,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: "#",
-    },
-    {
-      id: 11,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg",
-      ],
-      url: "https://facebook.com",
-    },
-    {
-      id: 12,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: "https://pinterest.com",
-    },
-    {
-      id: 13,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: "https://dribbble.com",
-    },
-    {
-      id: 14,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
-    },
-    {
-      id: 15,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
-    },
-    {
-      id: 16,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: "https://twitter.com",
-    },
-    {
-      id: 17,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
-    },
-    {
-      id: 18,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
-    },
-    {
-      id: 19,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: "https://dribbble.com",
-    },
-    {
-      id: 20,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg",
-      ],
-      url: "https://facebook.com",
-    },
-    {
-      id: 21,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: "https://pinterest.com",
-    },
-    {
-      id: 22,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: "#",
-    },
-    {
-      id: 23,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
+      title: "Watch This",
+      subtitle:
+        "An app that allows you to choose 3 generes and get back 3 movies recommended to watch in those genres",
+      imageUrl: WatchThisHome,
+      largeImageUrl: [WatchThisLogin, WatchThisRegister],
+      url: "https://peaceful-scrubland-82341.herokuapp.com/",
+      git: "https://github.com/MarkRivera/WatchThis",
     },
   ],
   experience: {
@@ -575,9 +494,9 @@ const database = {
     },
   ],
   contactInfo: {
-    phoneNumbers: ["+012-3456-7891", "+012-3456-7892"],
-    emailAddress: ["admin.sitename@example.com", "info.sitename@example.com"],
-    address: "121 King Street, Melbourne, Victoria 3000, Australia",
+    phoneNumbers: ["+1-646-684-9212"],
+    emailAddress: ["mrivera1991@gmail.com", "mrivera@svnstar.com"],
+    address: "Remote (Las Vegas, NV)",
   },
 };
 

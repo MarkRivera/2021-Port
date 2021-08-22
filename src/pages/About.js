@@ -157,7 +157,7 @@ function About() {
             <div className="row mt-30-reverse">
               {skills.map(skill => (
                 <div className="skill-container">
-                  <h3>{skill.title}</h3>
+                  <h3 className="mi-resume-details">{skill.title}</h3>
                   <div className="skill-icons">
                     {skill.data.map(icon => (
                       <div className="data-containers">
