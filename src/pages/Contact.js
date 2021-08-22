@@ -97,6 +97,7 @@ function Contact() {
                 <form
                   className="mi-form mi-contact-form"
                   onSubmit={submitHandler}
+                  name="contact"
                   netlify
                 >
                   <div className="mi-form-field">
