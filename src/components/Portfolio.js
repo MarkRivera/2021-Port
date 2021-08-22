@@ -2,9 +2,17 @@ import FsLightbox from "fslightbox-react";
 import React, { useState } from "react";
 import * as Icon from "react-feather";
 import ProgressiveImage from "react-progressive-image";
+import ClipLoader from "react-spinners/ClipLoader";
+
+const override = `
+  display: block;
+  margin: 0 auto;
+  border-color: #0d6efd;
+`;
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
+  let [color, setColor] = useState("#0d6efd");
   const { title, subtitle, imageUrl, largeImageUrl, url, git } = props.content;
 
   const handleToggler = value => {
@@ -15,8 +23,23 @@ function Portfolio(props) {
     <div className="mi-portfolio mi-portfolio-visible">
       <div className="mi-portfolio-image">
         {/* <img src={imageUrl} alt={title} /> */}
-        <ProgressiveImage src={imageUrl}>
-          {src => <img src={src} alt={title} />}
+        <ProgressiveImage src={imageUrl} delay={3000}>
+          {(src, loading) =>
+            loading ? (
+              <ClipLoader
+                color={color}
+                loading={loading}
+                css={override}
+                size={150}
+              />
+            ) : (
+              <img
+                style={{ opacity: loading ? 0.5 : 1 }}
+                src={src}
+                alt={title}
+              />
+            )
+          }
         </ProgressiveImage>
         <ul>
           {!largeImageUrl ? null : (
