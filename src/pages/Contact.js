@@ -34,7 +34,16 @@ function Contact() {
       setMessage("Message is required");
     } else {
       setError(false);
-      setMessage("You message has been sent!!!");
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formdata).toString(),
+      })
+        .then(() => setMessage("You message has been sent!!!"))
+        .catch(error => {
+          setError(true);
+          setMessage("Something went wrong!");
+        });
     }
   };
   const handleChange = event => {
