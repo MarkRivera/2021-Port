@@ -95,7 +95,6 @@ function Contact() {
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
                 <form
-                  action="#"
                   className="mi-form mi-contact-form"
                   onSubmit={submitHandler}
                   netlify
