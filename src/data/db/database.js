@@ -1,9 +1,9 @@
 import Mock from "../mock";
 
 // Mark Images
-import AboutMark from "../images/Mark-Five.jpg";
+import AboutMark from "../images/Mark-Five.webp";
 import MarkResume from "../files/Software Engineer Summary.pdf";
-import MarkHeader from "../images/Mark-Three.jpg";
+import MarkHeader from "../images/Mark-Three.webp";
 
 // Project Images
 // -- Protected

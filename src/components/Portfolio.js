@@ -12,7 +12,7 @@ const override = `
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  let [color, setColor] = useState("#0d6efd");
+  let [color] = useState("#0d6efd");
   const { title, subtitle, imageUrl, largeImageUrl, url, git } = props.content;
 
   const handleToggler = value => {

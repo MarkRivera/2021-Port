@@ -161,11 +161,11 @@ function About() {
           <div className="mi-skills">
             <div className="row mt-30-reverse">
               {skills.map(skill => (
-                <div className="skill-container">
+                <div className="skill-container" key={skill.title}>
                   <h3 className="mi-resume-details">{skill.title}</h3>
                   <div className="skill-icons">
                     {skill.data.map(icon => (
-                      <div className="data-containers">
+                      <div className="data-containers" key={icon.title}>
                         <h4 className="skill-icon-title">{icon.title}</h4>
                         <LineIcon name={icon.icon} />
                       </div>

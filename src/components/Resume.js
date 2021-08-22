@@ -37,7 +37,9 @@ function Resume(props) {
         <ul>
           {typeof details === "string"
             ? details
-            : details.map(detail => <li>{detail}</li>)}
+            : details.map((detail, index) => (
+                <li key={`${detail}&${index}`}>{detail}</li>
+              ))}
         </ul>
       </div>
     </div>
