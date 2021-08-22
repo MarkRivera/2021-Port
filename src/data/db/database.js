@@ -117,6 +117,16 @@ const database = {
         linkedin: "",
       },
     },
+    {
+      id: 4,
+      content:
+        "Mark's positive attitude keeps everyone on his team motivated to reach their goals in a timely manner. His diligence is evident in how he takes the time to do his work correctly to meet the demands of the client. If ever you need a guy to do the job, regard of the deadline being extremely short, Mark is your man.",
+      author: {
+        name: "D. Maingrette",
+        designation: "Voice Talent - Client",
+        linkedin: "",
+      },
+    },
   ],
   skills: [
     {
