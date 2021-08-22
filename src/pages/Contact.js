@@ -69,11 +69,8 @@ function Contact() {
   return (
     <Layout>
       <Helmet>
-        <title>Contact - Chester React Personal Portfolio Template</title>
-        <meta
-          name="description"
-          content="Chester React Personal Portfolio Template Contact Page"
-        />
+        <title>Contact - Mark Rivera</title>
+        <meta name="description" content="Mark Rivera Contact Page" />
       </Helmet>
       <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">

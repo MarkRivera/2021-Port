@@ -75,18 +75,15 @@ function Home({ lightMode }) {
     },
   };
   useEffect(() => {
-    axios.get("/api/information").then((response) => {
+    axios.get("/api/information").then(response => {
       setInformation(response.data);
     });
   }, []);
   return (
     <Layout>
       <Helmet>
-        <title>Home - Chester React Personal Portfolio Template</title>
-        <meta
-          name="description"
-          content="Chester React Personal Portfolio Template Homepage"
-        />
+        <title>Home - Mark Rivera</title>
+        <meta name="description" content="Mark Rivera's Portfolio" />
       </Helmet>
       <div className="mi-home-area mi-padding-section">
         <Particles

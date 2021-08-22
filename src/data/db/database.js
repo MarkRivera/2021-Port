@@ -107,6 +107,16 @@ const database = {
         linkedin: "https://www.linkedin.com/in/michaelkrockingham/",
       },
     },
+    {
+      id: 3,
+      content:
+        "Mark Rivera is incredibly professional and diligent. During COVID, I decided to open up my own business and wanted a website built from scratch. He sat with me and took time to make sure I understood every step, which I really appreciated as I've had not so great experiences with other developers that rushed me and left me in the dust. I fully recommend to anyone to hire him for your own projects!",
+      author: {
+        name: "Anauris Soto",
+        designation: "Dog Walker - Client",
+        linkedin: "",
+      },
+    },
   ],
   skills: [
     {

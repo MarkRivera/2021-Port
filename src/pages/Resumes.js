@@ -26,7 +26,7 @@ function Resumes() {
   return (
     <Layout>
       <Helmet>
-        <title>Mark's Resume</title>
+        <title>Resume - Mark Rivera</title>
         <meta name="description" content="Mark Rivera's Resume Page" />
       </Helmet>
       <div className="mi-resume-area mi-section mi-padding-top mi-padding-bottom">

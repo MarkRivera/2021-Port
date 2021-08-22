@@ -36,7 +36,7 @@ function Portfolios() {
   return (
     <Layout>
       <Helmet>
-        <title>Portfolios - Mark's Portfolio</title>
+        <title>Portfolio - Mark Rivera</title>
         <meta name="description" content="Mark's portfolio" />
       </Helmet>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
