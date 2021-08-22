@@ -5,6 +5,12 @@ import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 function Contact() {
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [emailAddress, setEmailAddress] = useState([]);
@@ -37,7 +43,7 @@ function Contact() {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formdata).toString(),
+        body: encode({ "form-name": "contact", ...formdata }),
       })
         .then(() => setMessage("You message has been sent!!!"))
         .catch(error => {
