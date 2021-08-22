@@ -100,6 +100,7 @@ function Contact() {
                   name="contact"
                   netlify
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
                     <input
