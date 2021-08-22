@@ -83,6 +83,7 @@ function Contact() {
                   action="#"
                   className="mi-form mi-contact-form"
                   onSubmit={submitHandler}
+                  netlify
                 >
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
