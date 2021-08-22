@@ -23,7 +23,7 @@ function Portfolio(props) {
     <div className="mi-portfolio mi-portfolio-visible">
       <div className="mi-portfolio-image">
         {/* <img src={imageUrl} alt={title} /> */}
-        <ProgressiveImage src={imageUrl} delay={3000}>
+        <ProgressiveImage src={imageUrl}>
           {(src, loading) =>
             loading ? (
               <ClipLoader
