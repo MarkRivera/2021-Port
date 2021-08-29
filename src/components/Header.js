@@ -50,7 +50,7 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolios">
+            <NavLink to="/portfolio">
               <span>Portfolio</span>
             </NavLink>
           </li>
