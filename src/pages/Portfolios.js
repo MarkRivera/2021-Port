@@ -41,7 +41,7 @@ function Portfolios() {
       </Helmet>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Portfolios" />
+          <Sectiontitle title="Portfolio" />
           {<PortfoliosView portfolios={currentPortfolios} />}
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination

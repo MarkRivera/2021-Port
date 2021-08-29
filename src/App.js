@@ -45,7 +45,7 @@ function App() {
         </Route>
         <Route path="/about" component={About} />
         <Route path="/resume" component={Resumes} />
-        <Route path="/portfolios" component={Portfolios} />
+        <Route path="/portfolio" component={Portfolios} />
         <Route path="/contact" component={Contact} />
         <Route path="/*" component={Home} />
         <Route path="*" component={Notfound} />
